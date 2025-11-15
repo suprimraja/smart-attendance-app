@@ -21,6 +21,7 @@ class CSVHelper {
     final dir = await getApplicationDocumentsDirectory();
     final file = File("${dir.path}/attendance.csv");
 
-    return file.writeAsString(csv);
+    await file.writeAsString(csv);
+    return file;
   }
 }
