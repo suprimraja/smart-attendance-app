@@ -1,0 +1,35 @@
+name: attendance_app
+description: A simple QR-based attendance app.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # QR Generation
+  qr_flutter: ^4.1.0
+
+  # QR Scanning (supports Windows!)
+  mobile_scanner: ^3.5.0
+
+  # Local Storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # CSV Export
+  csv: ^5.0.2
+
+  # Path for file saving
+  path_provider: ^2.1.0
+
+  # File Sharing
+  share_plus: ^7.0.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
